@@ -18,3 +18,20 @@ The Python code provided here performs the following tasks:
 6. Analyzing and comparing the coefficients, RMSE values, and predicted values of the models.
 
 
+Imports necessary Python libraries and modules for data analysis, visualization, and machine learning, including `numpy`, `pandas`, `seaborn`, `matplotlib`, and various components from `sklearn` such as `train_test_split`, `StandardScaler`, and regression models like `LinearRegression`, `Lasso`, and `Ridge`.
+
+### Technical Overview
+1. **Data Analysis and Preprocessing:**
+   - Data is loading into a dataset using `pandas`, followed by exploratory data analysis (EDA) with `seaborn` and `matplotlib` for visualization.
+   - Data preprocessing steps include handling missing values, feature scaling with `StandardScaler`, and encoding categorical variables if present.
+
+2. **Model Building and Evaluation:**
+   - The project uses `train_test_split` to divide the dataset into training and testing sets to evaluate the performance of the models.
+   - It includes the implementation of linear regression models (`LinearRegression`, `Lasso`, `Ridge`) from `sklearn.linear_model`.
+   - Model evaluation is performed using the mean squared error metric from `sklearn.metrics`, which assesses the models' performance in predicting the median house values.
+
+3. **Regression Models:**
+   - Linear Regression is used as a baseline model for predicting house values.
+   - Lasso (L1 regularization) and Ridge (L2 regularization) regression models are applied to analyze their effectiveness in handling overfitting and to compare their performance against the baseline linear regression model.
+
+
